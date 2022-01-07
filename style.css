@@ -24,9 +24,8 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(245, 245, 245, 0.507);
+  background-color: rgba(245, 245, 245, 0.7);
 }
-
 .loader img {
   position: fixed;
   top: 50%;
@@ -37,7 +36,6 @@ h1 {
   -ms-transform: translate(-50%,-50%);
   -o-transform: translate(-50%,-50%);
 }
-
 .img-container {
   margin: 10px 30%;
 }
