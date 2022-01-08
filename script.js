@@ -2,7 +2,8 @@ const imgContainer =document.getElementById("img-container");
 const loader = document.getElementById("loader");
 let photoArray =[] ;
 // https://api.unsplash.com/photos/?client_id=YOUR_ACCESS_KEY
-const count = 30 ;
+// on load count 5 after load we will make it 30
+const count = 5 ;
 const clientId="MpQGs9sdNOMb7WmBTOoK_PbilLmBzct8CKnmsvI28Ss" ;
 const apiLink =`https://api.unsplash.com/photos/random/?client_id=${clientId}&count=${count}`
 
@@ -15,6 +16,7 @@ function imgLoaded() {
     if (imgLoadedCounter==totalImg){
         ready=true;
         loader.hidden=true;
+        count=30;
     }
     // console.log(`counter ${imgLoadedCounter},total ${totalImg},status${ready}`);
 }
